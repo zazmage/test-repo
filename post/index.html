@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/blog-posts.css">
+  <link rel="stylesheet" href="../styles/carousel.css">
+  <title>Blog Posts</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="index.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="main-logo-container">
+      <img src="../assets/taste-of-turkey-logo.png" alt="Taste Of Turkey Logo">
+    </div>
+    <nav>
+      <ul id="auth-options">
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carousel-container">
+      <h3>Newest Recipes</h3>
+      <div id="carousel">
+        <button id="left-btn" class="carousel-btn"><img src="../assets/arrow-left.svg" alt="Arrow Left"></button>
+        <div class="carousel-image-container">
+          <img id="carousel-img" src="" alt="Carousel image">
+          <div id="carousel-caption"></div>
+        </div>
+        <button id="right-btn" class="carousel-btn"><img src="../assets/arrow-right.svg" alt="Arrow Right"></button>
+      </div>
+    </section>
+
+
+    <section class="blog-posts-container">
+      <h2>BLOG POSTS</h2>
+
+      <div class="filter-container">
+        <select name="" id="">
+          <option>Latest</option>
+        </select>
+        <select name="" id="">
+          <option>Title (A-Z)</option>
+        </select>
+        <select name="" id="">
+          <option>All Tags</option>
+        </select>
+        <select name="" id="">
+          <option>Search by title...</option>
+        </select>
+      </div>
+
+      <div id="posts-cards-container">
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <nav>
+        <ul class="categories">
+          <li>Recipe Box</li>
+          <li>Apetizers</li>
+          <li>Breakfast</li>
+          <li>Soups</li>
+          <li>Desserts</li>
+          <li>Mezes</li>
+        </ul>
+      </nav>
+      <div class="main-logo-container">
+        <img src="../assets/taste-of-turkey-logo.png" alt="Taste Of Turkey Logo">
+      </div>
+      <nav class="social-media-container">
+        <h3>FOLLOW US</h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com"><img src="../assets/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com"><img src="../assets/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.twitter.com"><img src="../assets/twitter.svg" alt="Twitter"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <small>©MEDITERIAN FOODS BY EKREM GURSOY 2025</small>
+  </footer>
+
+  <script type="module" src="../lib/blogPosts.js"></script>
+  <script type="module" src="../lib/navBar.js"></script>
+  <script type="module" src="../lib/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/create-post.css">
+  <title>Create Post</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="index.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="main-logo-container">
+      <img src="../assets/taste-of-turkey-logo.png" alt="Taste Of Turkey Logo">
+    </div>
+    <nav>
+      <ul id="auth-options">
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="create-post-container">
+      <h2>CREATE POST</h2>
+      <form id="create-post-form" action="#">
+        <label for="title">Post Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">Content</label>
+        <textarea id="content" name="content" required></textarea>
+        <p id="char-count">0/10000</p>
+        <label for="image">Image URL</label>
+        <input type="url" id="image" name="image" required>
+        <label for="image-alt">Image Alt Text</label>
+        <input type="text" id="image-alt" name="image-alt" required>
+        <label for="tags">Tags (separated by commas)</label>
+        <input type="text" id="tags" name="tags" required>
+        <button type="submit">Publish</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <nav>
+        <ul class="categories">
+          <li>Recipe Box</li>
+          <li>Apetizers</li>
+          <li>Breakfast</li>
+          <li>Soups</li>
+          <li>Desserts</li>
+          <li>Mezes</li>
+        </ul>
+      </nav>
+      <div class="main-logo-container">
+        <img src="../assets/taste-of-turkey-logo.png" alt="Taste Of Turkey Logo">
+      </div>
+      <nav class="social-media-container">
+        <h3>FOLLOW US</h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com"><img src="../assets/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com"><img src="../assets/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.twitter.com"><img src="../assets/twitter.svg" alt="Twitter"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <small>©MEDITERIAN FOODS BY EKREM GURSOY 2025</small>
+  </footer>
+  <script type="module" src="../lib/createPost.js"></script>
+  <script type="module" src="../lib/navBar.js"></script>
+</body>
+
+</html>
